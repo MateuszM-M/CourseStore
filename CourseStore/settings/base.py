@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # 3rd party apps:
     "storages",
     # My apps:
+    'courses.apps.CoursesConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
