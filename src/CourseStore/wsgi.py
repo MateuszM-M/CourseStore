@@ -13,9 +13,9 @@ from pathlib import Path
 from django.core.wsgi import get_wsgi_application
 from dotenv import load_dotenv
 
-env_path = Path(__file__).resolve().parent / 'CourseStore/settings/.env'
+env_path = Path(__file__).resolve().parent / 'src/CourseStore/settings/.env'
 load_dotenv(dotenv_path=env_path)
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'CourseStore.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'src.CourseStore.settings')
 
 application = get_wsgi_application()
