@@ -9,12 +9,12 @@ SECRET_KEY = os.environ.get("PROD_SECRET_KEY")
 
 DATABASES = {
     "default": {
-        "ENGINE": os.environ.get("PROD_DB_ENGINE"),
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ.get("PROD_DB_NAME"),
         "USER": os.environ.get("PROD_DB_USER"),
         "PASSWORD": os.environ.get("PROD_DB_PS"),
         "HOST": os.environ.get("PROD_DB_HOST"),
-        "PORT": os.environ.get("PROD_DB_PORT"),
+        "PORT": "5432",
     }
 }
 
