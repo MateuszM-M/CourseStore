@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
 ]
 
+
+AUTH_USER_MODEL = "users.User"
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     
@@ -63,7 +67,7 @@ ROOT_URLCONF = 'CourseStore.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
