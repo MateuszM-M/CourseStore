@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views import View
 
 
-class Home(View):
+class Dashboard(View):
     def get(self, request):
-        return render(request, 'home.html')
+        return render(request, 'courses/dashboard.html')
 
