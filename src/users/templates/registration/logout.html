@@ -1,0 +1,24 @@
+{% extends "layout/main.html" %}
+
+{% block title %}Course Store | Logout{% endblock %}
+
+{% block content %}
+
+<div class="container d-flex justify-content-around my-auto">
+    <div class="card col-md-4 bg-dark">        
+        <main class="form-signin">
+            <div class="login-form">
+
+                <div class="card text-center bg-dark">
+                    <h3 class="fw-normal card-text card-header">Logout</h3>
+                    <div class="text-align-center my-3">
+
+                        <p>You are logged out.</p>
+                        <a href="{% url 'users:login' %}">Click here to log in again</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+{% endblock %}

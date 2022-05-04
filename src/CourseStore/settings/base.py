@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+# Imports:
+
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -21,6 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
+
+# Dotenv config:
 
 env_path = BASE_DIR / 'CourseStore/settings/.env'
 load_dotenv(dotenv_path=env_path)
@@ -40,6 +44,8 @@ INSTALLED_APPS = [
     
     # 3rd party apps:
     "storages",
+    'crispy_forms',
+    
     # My apps:
     'courses.apps.CoursesConfig',
     'users.apps.UsersConfig',
@@ -83,12 +89,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'CourseStore.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
@@ -120,6 +120,13 @@ USE_I18N = True
 USE_TZ = True
 
 
+# URL login redirect
+
+LOGIN_REDIRECT_URL = 'courses:dashboard'
+LOGIN_URL = 'users:login'
+LOGOUT_URL = 'users:logout'
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
@@ -135,3 +142,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Crispy forms:
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
