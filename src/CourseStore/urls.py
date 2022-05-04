@@ -22,3 +22,8 @@ urlpatterns = [
     path('', include('courses.urls')),
     path('', include('users.urls')),
 ]
+
+handler404 = "courses.error_views.handle_404"
+handler500 = "courses.error_views.handle_500"
+handler403 = "courses.error_views.handle_403"
+handler400 = "courses.error_views.handle_400"

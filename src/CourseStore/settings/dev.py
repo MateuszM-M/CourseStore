@@ -1,7 +1,7 @@
 from CourseStore.settings.base import *
 import os
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["herokuapp.com", "127.0.0.1"]
 
