@@ -1,5 +1,5 @@
 from CourseStore.settings.base import *
-
+import os
 
 DEBUG = True
 
