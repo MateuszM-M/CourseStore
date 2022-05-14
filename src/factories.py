@@ -2,7 +2,7 @@ import factory
 from django.contrib.auth import get_user_model
 from faker import Faker
 
-from .courses.models import (Content, Course, File, Image, ItemBase, Module,
+from courses.models import (Content, Course, File, Image, ItemBase, Module,
                             Subject, Text, Video)
 
 fake = Faker()

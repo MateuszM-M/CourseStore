@@ -15,7 +15,7 @@ CourseStore is an app in early stage of development, created for learning purpos
  - Python
  - Django
  - Docker
- - CircleCI
+ - TravisCI
  - Pytest
  - Factory-boy
  - Postgreql
