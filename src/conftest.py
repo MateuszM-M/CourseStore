@@ -1,7 +1,7 @@
 import pytest
 
 from pytest_factoryboy import register
-from .factories import (UserStudentFactory, UserTeacherFactory, SubjectFactory,
+from factories import (UserStudentFactory, UserTeacherFactory, SubjectFactory,
                        CourseFactory, ModuleFactory
                        )
 
