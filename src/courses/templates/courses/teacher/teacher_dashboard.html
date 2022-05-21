@@ -3,5 +3,24 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-Teacher Dasbhoard
+<div class="container d-flex justify-content-around my-auto">
+    <div class="card col-md-4">        
+        <main class="form-signin">
+            <div class="login-form">
+
+                <div class="card text-center">
+                    <h3 class="fw-normal card-text card-header">Your courses</h3>
+                    <a type="button" class="btn btn-outline-primary" href="{% url 'courses:create_course' %}">Create course</a>
+                </div>
+
+                <div class="p-5">
+                    <p>lorem ipsum</p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+</div>
 {% endblock %}
