@@ -14,7 +14,13 @@
                 </div>
 
                 <div class="p-5">
-                    <p>lorem ipsum</p>
+                    <div class="list-group">
+                            {% for course in object_list %}
+                                <a href="#" class="list-group-item list-group-item-action">{{ course.title }}</a>
+                            {% empty %}
+                                <p>No courses added yet</p>
+                            {% endfor %}
+                    </div>
                 </div>
 
             </div>
