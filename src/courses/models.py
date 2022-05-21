@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth import get_user_model
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
+from django.utils.text import slugify
 
 class Subject(models.Model):
     """
@@ -42,7 +43,7 @@ class Course(models.Model):
         
     def __str__(self):
         return self.title
-    
+       
 
 class Module(models.Model):
     """

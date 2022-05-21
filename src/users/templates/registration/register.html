@@ -21,8 +21,7 @@
                         <div class="form-floating my-2">
                             {{ form|crispy }}
                             {% csrf_token %}
-                            <input type="hidden" name="next" value="{{ next }}" />
-                                <input class="w-100 btn btn-primary mt-3" type="submit" value="Register">
+                            <input class="w-100 btn btn-primary mt-3" type="submit" value="Register">
                         </div>
 
                 </form>
