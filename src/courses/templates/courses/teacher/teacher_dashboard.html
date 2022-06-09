@@ -3,5 +3,30 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-Teacher Dasbhoard
+<div class="container d-flex justify-content-around my-auto">
+    <div class="card col-md-4">        
+        <main>
+            <div>
+
+                <div class="card text-center">
+                    <h3 class="fw-normal card-text card-header">Your courses</h3>
+                    <a type="button" class="btn btn-outline-primary" href="{% url 'courses:create_course' %}">Create course</a>
+                </div>
+
+                <div class="p-5">
+                    <div class="list-group">
+                            {% for course in object_list %}
+                                <a href="#" class="list-group-item list-group-item-action">{{ course.title }}</a>
+                            {% empty %}
+                                <p>No courses added yet</p>
+                            {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+</div>
 {% endblock %}
