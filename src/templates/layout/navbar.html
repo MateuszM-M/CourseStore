@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg bg-light">
     <div class="mx-4">
         <a class="navbar-brand" href="{% url 'courses:dashboard' %}">CourseStore</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,10 +15,10 @@
                     <a class="nav-link" href="#">Find courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Your bought courses</a>
+                    <a class="nav-link" href="{% url 'courses:student_dashboard' %}">Your bought courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Your developed courses</a>
+                    <a class="nav-link" href="{% url 'courses:teacher_dashboard' %}">Your developed courses</a>
                 </li>
             </ul>
 
