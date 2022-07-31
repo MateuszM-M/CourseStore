@@ -1,0 +1,42 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$CuaLCpdQzYuNdLQsr2Mozk$hgBNjpiBtK+spVBcmHwRaEJiU8qY5T0qyPnZ3+Fx+mk=",
+            "last_login": "2022-07-17T21:17:36.575Z",
+            "is_superuser": true,
+            "username": "Mateusz",
+            "first_name": "",
+            "last_name": "",
+            "email": "mikull94@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-07-17T21:16:31.543Z",
+            "is_student": false,
+            "is_teacher": false,
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$ZjQiLiYbWTAYp0cklyewbP$8z+85KO7LtgBExb9hbok7ZsneWN7l0X1bdC8r8Vf0yM=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "test_user",
+            "first_name": "",
+            "last_name": "",
+            "email": "testcourse@testcourse.pl",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-07-17T21:18:17.374Z",
+            "is_student": true,
+            "is_teacher": true,
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
